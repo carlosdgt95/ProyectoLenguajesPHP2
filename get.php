@@ -1,5 +1,12 @@
 <?php
-$url='https://proyectolp2-e0fec-default-rtdb.firebaseio.com/Stand.json';
+$tipo = "place"; // "stands" , "place", "event"
+
+if( $tipo == "place"){
+    $url = 'https://proyectolp2-e0fec-default-rtdb.firebaseio.com/places.json';
+}else{
+    $url='https://proyectolp2-e0fec-default-rtdb.firebaseio.com/Stand.json';
+}
+
 $ch= curl_init();
 curl_setopt($ch, CURLOPT_URL,$url);
 curl_setopt($ch,CURLOPT_RETURNTRANSFER,true);
