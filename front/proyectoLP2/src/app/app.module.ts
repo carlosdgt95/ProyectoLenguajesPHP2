@@ -8,11 +8,12 @@ import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/t
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { EventoscgComponent } from './eventoscg/eventoscg.component';
+import { PlacesComponent } from './places/places.component';
 @NgModule({
   declarations: [
     AppComponent,
-  
-    EventoscgComponent
+    EventoscgComponent,
+    PlacesComponent
   ],
   imports: [
     BrowserModule,
