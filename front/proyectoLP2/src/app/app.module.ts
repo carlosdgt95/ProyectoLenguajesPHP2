@@ -4,15 +4,23 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+
+import { EventoscgComponent } from './eventoscg/eventoscg.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+  
+    EventoscgComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    // {provide:LocationStrategy,useClass:HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
