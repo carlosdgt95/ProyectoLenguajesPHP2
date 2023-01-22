@@ -1,0 +1,79 @@
+
+<header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Like on Facebook</a></li>
+              <li><a href="#" class="text-white">Email me</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+          <strong>Stand</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+<main>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="col-xs-12 col-sm-6 col-md-8">
+            <label for="exampleFormControlFile1">Cargue aqui su imagen</label>
+            <div class="col">
+              <div class="card shadow-sm">
+                <form>
+                    <div class="form-group">
+                              
+                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Description</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                              </div>
+
+
+                              
+                 
+                    </form>
+                    <div class="col-5">
+                      <label for="fecha" class="form-label">Fecha inicio</label>
+                      <input type="date" formControlName="fecha_inicio" class="form-control" id="fechaInicio" ngModel required [class.is-invalid]="y.fecha_inicio.errors && y.fecha_inicio.touched">
+                      <div class="invalid-feedback">
+                        Ingrese fecha de inicio.
+                      </div>
+                    </div>
+                   
+              
+                        <button type="button" class="btn btn-outline-dark">Agregar</button>
+                        <button type="button" class="btn btn-outline-dark">Regresar</button>
+                        <div class="alert alert-primary" role="alert">
+                            <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                            Se eliminara de forma permanente
+                          </div>
+                       
+
+                
+
+
+              </div></div></div></div></div>
+            
+</main>
