@@ -13,6 +13,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { EditdeletestandcgComponent } from './editdeletestandcg/editdeletestandcg.component';
 import { PlacesComponent } from './places/places.component';
+import { VereventosComponent } from './vereventos/vereventos.component';
+import { AggeventoComponent } from './aggevento/aggevento.component';
 @NgModule({
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
@@ -23,7 +25,9 @@ import { PlacesComponent } from './places/places.component';
     EventoscgComponent,
        EventostandaddComponent,
        EditdeletestandcgComponent,
-       PlacesComponent
+       PlacesComponent,
+       VereventosComponent,
+       AggeventoComponent
   ],
   imports: [
     BrowserModule,

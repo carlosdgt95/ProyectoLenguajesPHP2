@@ -4,6 +4,9 @@ import { EventoscgComponent } from './eventoscg/eventoscg.component';
 import { EventostandaddComponent } from './eventostandadd/eventostandadd.component';
 import { EditdeletestandcgComponent } from './editdeletestandcg/editdeletestandcg.component';
 import { PlacesComponent } from './places/places.component';
+import { AggeventoComponent } from './aggevento/aggevento.component';
+import { VereventosComponent } from './vereventos/vereventos.component';
+
 const routes: Routes = [
 {path:"stands", component: EventoscgComponent},
 {path:"addstand",component:EventostandaddComponent},

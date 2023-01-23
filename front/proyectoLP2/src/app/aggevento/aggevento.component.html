@@ -1,0 +1,112 @@
+<head>
+    <link rel="stylesheet" src="app.component.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  </head>
+  
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark p-3 " id="headerNav">
+      <div class="container-fluid">
+        <a class="navbar-brand d-block d-lg-none" href="#">
+          <img src="/static_files/images/logos/logo_2_white.png" height="80" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+     
+        <div class=" collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto ">
+            <li class="nav-item hoverable">
+              <a class="nav-link mx-2 active" aria-current="page" href="#">Todo Aqui</a>
+            </li>
+            <li class="nav-item hoverable">
+              <a class="nav-link mx-2" href="#">Servicios</a>
+            </li>
+            <li class="nav-item d-none d-lg-block">
+              <a class="nav-link mx-2" href="#">
+                <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/fashion-watercolor-abstract-logo-35-design-template-5156b593e8c6b102441566d541330aa5_screen.jpg?ts=1617636223"
+                 alt="Logo" height="180px" />
+              </a>
+            </li>
+            <li class="nav-item hoverable">
+              <a class="nav-link mx-2" href="#">Galeria</a>
+            </li>
+            <li class="nav-item hoverable">
+              <a class="nav-link mx-2" href="#">Redes</a>
+            </li>
+          
+          </ul>
+        </div>
+      </div>
+    </nav>
+   
+  </header>
+  
+  <main>
+  
+    <section class="encabezado py-5 text-center container">
+      <div class="item item1">
+        <p>Lugar del Evento: Aqui va el lugar</p>
+        <p>Fecha: Aqui va la fecha</p>
+        <p>Horario: Aqui va la hora de inicio y fin dl evento</p>
+      </div>
+    </section>
+    <div class="cuerpo">
+      <div class="campos row">
+          <div class="column">
+              <form method="get" action="javascript: void(0);" id="login-form" class="login-form"autocomplete="on"  novalidate>
+  
+              <div>
+  
+                  <label class="label-email">Nombre del Evento</label>
+                  <input type="text" id="fname"  name="placa" tabindex="1" matInput class="form-control form-control-lg" required
+                  formControlName="placa">
+           
+  
+              </div>
+              
+              <div>
+                <label class="label-email">Descripción</label>
+                <input type="text" id="fname"  name="marca"  tabindex="1" matInput class="form-control form-control-lg" required
+                formControlName="marca">
+              </div>
+              
+              <div>
+                
+                    <label class="label-email">Cantidad de Stands a Ofrecer </label>
+                     <input type="number" id="quantity" name="quantity" min="3" max="15" tabindex="1" matInput class="form-control form-control-lg" required
+                    formControlName="modelo">
+                  
+            </div>
+  
+            <div>
+                <label class="label-email">Precio del stand</label>
+                <input type="number" id="quantity" name="quantity" min="0" max="150" tabindex="1" matInput class="form-control form-control-lg" required
+                formControlName="color">
+              </div>
+  
+              <div>
+                <label class="label-email">Logo del evento</label>
+                <input type="text" class="text" id="fname" name="color" placeholder="Ingrese el color del vehiculo" tabindex="1" matInput class="form-control form-control-lg" required
+                formControlName="color">
+              </div>
+              
+              <div>              
+                <input  type="submit" value="Publicar Evento">
+              </div>
+  
+            </form>
+      </div>
+      
+  </div>
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+    </div>
+  </footer>
+  
