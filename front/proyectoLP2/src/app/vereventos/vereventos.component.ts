@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, Input } from '@angular/core';
+import { Evento } from '../interface/evento';
+import { EventosService } from '../services/eventos.service';
+
 
 @Component({
   selector: 'app-vereventos',
@@ -7,9 +10,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VereventosComponent implements OnInit {
 
-  constructor() { }
+  events: Evento[] = [];
+  error= 'fail';
+  success = 'exitoso';
+  
+
+  constructor(private eventosService: EventosService) { }
 
   ngOnInit(): void {
   }
+
+  getCars(): void {
+    this.eventosService.getAllEvento().subscribe(
+      (data: Evento[]) => {
+        this.events = data;
+        this.success = 'successful retrieval of the list';
+      },
+      (err) => {
+        console.log(err);
+        this.error = err;
+      }
+    );
+  }
+  
 
 }

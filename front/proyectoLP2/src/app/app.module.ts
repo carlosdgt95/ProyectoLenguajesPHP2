@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserDynamicTestingModule } from '@angular/platform-browser-dynamic/testing';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
@@ -15,24 +14,25 @@ import { EditdeletestandcgComponent } from './editdeletestandcg/editdeletestandc
 import { PlacesComponent } from './places/places.component';
 import { VereventosComponent } from './vereventos/vereventos.component';
 import { AggeventoComponent } from './aggevento/aggevento.component';
+
 @NgModule({
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA
   ],
   declarations: [
     AppComponent,
-    
     EventoscgComponent,
-       EventostandaddComponent,
-       EditdeletestandcgComponent,
-       PlacesComponent,
-       VereventosComponent,
-       AggeventoComponent
+    EventostandaddComponent,
+    EditdeletestandcgComponent,
+    PlacesComponent,
+    VereventosComponent,
+    AggeventoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
 
   ],
   providers: [
